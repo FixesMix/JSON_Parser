@@ -8,26 +8,26 @@ The format is as follows:
 
 5. "NEXT:" continues without a choice requirement, "SETS_FLAG:" is a choice to be remembered
 
-   Example:
-     CHAPTER: 1
-     TITLE: New Chapter
-     START: Forest
-                                 NODE: Forest
-   
-     NARRATOR: It's very cold here :(
-     NARRATOR: The man takes a turn on the path and looks to his left. He finds a cave.
-     CHOICE: Go to cave -> Cave
-     CHOICE: Stay on the path -> Forest
+Example:
+```
+CHAPTER: 1
+TITLE: New Chapter
+START: Forest
 
-     NODE: Cave
-     NARRATOR: It's very dark in here :(
-     NEXT_CHAPTER: 2
+NODE: Forest
+NARRATOR: It's very cold here :(
+NARRATOR: The man takes a turn on the path and looks to his left. He finds a cave.
+CHOICE: Go to cave -> Cave
+CHOICE: Stay on the path -> Forest
 
-     CHAPTER: 2
-     TITLE: Next New Chapter
-     START: Cave
-                                 NODE: Cave
-   
-     ... And so on and so forth
+NODE: Cave
+NARRATOR: It's very dark in here :(
+NEXT_CHAPTER: 2
 
-   #keywords are case-sensitive
+CHAPTER: 2
+TITLE: Next New Chapter
+START: Cave
+
+NODE: Cave
+... And so on and so forth
+```
